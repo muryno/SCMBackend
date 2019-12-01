@@ -15,10 +15,6 @@ func main() {
 	router := mux.NewRouter()
 
 
-	config.GetDB().Model(model.RegisteredCourse{}).AddForeignKey("student_id","student(id)","CASCADE","CASCADE")
-
-
-	config.GetDB().Debug().AutoMigrate(&model.Student{}, &model.Faculty{},&model.Department{}, &model.Course{},model.RegisteredCourse{},model.DepartmentCourse{})
 
 
 
