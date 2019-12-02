@@ -6,14 +6,11 @@ import (
 	"log"
 	"net/http"
 	"os"
-	"schoolManagementAPI/config"
-	"schoolManagementAPI/model"
 )
 
 func main() {
 
 	router := mux.NewRouter()
-
 
 
 
